@@ -41,10 +41,12 @@ public class MessageListServlet extends ChatServlet {
                         pw.println("<div><strong>" + aMessage.getAuthor().getName() + "[Privat]"
                                 + "</strong>: "  + aMessage.getMessage()+ "</div> ");
                 }
+                else if(aMessage.getMessage().equals("UserRemoveFromChat")){
+                    pw.println("<div>Пользователь <strong>" + auth +"</strong> вышел из чата" + "</div>");
+                }
                 } else {
                 pw.println("<div><strong>" + aMessage.getAuthor().getName() + "(" + sdf.format(date) + ")"
                         + "</strong>: " + aMessage.getMessage() + "</div>");
-
                  }
             pw.println("</body></html>");
         }

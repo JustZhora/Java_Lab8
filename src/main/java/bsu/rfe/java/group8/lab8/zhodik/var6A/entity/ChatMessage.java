@@ -1,5 +1,7 @@
 package bsu.rfe.java.group8.lab8.zhodik.var6A.entity;
 
+import java.util.HashMap;
+
 public class ChatMessage {
 
     private String message;
@@ -12,6 +14,9 @@ public class ChatMessage {
         this.author = author;
         this.timestamp = timestamp;
         this.privatem = pname;
+    }
+
+    public ChatMessage(String userRemoveFromChat, HashMap<String, ChatUser> activeUsers, long timeInMillis) {
     }
 
     public long getTimestamp() {

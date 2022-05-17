@@ -35,6 +35,4 @@ public class ChatServlet extends javax.servlet.http.HttpServlet {
             getServletContext().setAttribute("messages", messages);
         }
     }
-
-
 }
